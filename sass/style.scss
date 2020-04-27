@@ -1,0 +1,106 @@
+@import "./base/reset.scss";
+@import "./utils/variables.scss";
+@import "./layout/header.scss";
+
+
+html, body{
+
+    /* GENERALS PROPERTIES */
+    
+    font-family: 'Monserrat', sans-serif;
+    color: $secondary-color;
+}
+
+
+/* MAIN PAGE */
+.main-page{
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* MENUS */
+
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* ONE MENU */
+    .menu-item{
+        width: 400px;
+        height: 550px;
+        display: flex;
+        margin: 25px 12.5px 25px 12.5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 1px 1px rgb(249, 249, 249);
+        border: 1px solid black;
+    
+        &__> h2{
+            font-size: 1rem;
+        }
+
+        &__logo{
+            background: no-repeat;
+            height: 54px;
+            width: 50px;
+        }
+
+        &__heading{
+            font-size: 3rem;
+        }
+
+        &--enchanted{
+            font-family: 'Devonshire', cursive;
+            background-color:rgb(252, 223, 219);
+        }
+
+        &--french{
+            font-family: 'Croissant One', cursive;
+            background-color:rgb(255, 245, 254);
+        }
+
+        &--tasty{
+            font-family: 'Dancing Script', cursive;
+            background-color: rgb(249, 249, 249);
+        }
+
+        &--palet{
+            font-family: 'Kaushan Script', cursive;
+            background-color: rgb(253, 255, 253);
+        }
+    }
+
+    .btn{
+        background-color: $primary-color;
+        border: 1px solid $secondary-color;
+        height: 50px;
+        width: 50%;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+    
+            color: $secondary-color;
+        }
+    }
+}
+
+/* FOOTER PAGE */
+.footer-page{
+    background-color: $primary-color;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0 10px 0 10px;
+
+    &.footer-page-item > a{
+        display: block;
+        color: $secondary-color;
+    }
+}
