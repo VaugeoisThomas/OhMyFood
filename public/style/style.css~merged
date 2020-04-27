@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+<<<<<<< HEAD
+=======
+html, body {
+  /* GENERALS PROPERTIES */
+  font-family: "Monserrat", sans-serif;
+  color: #fdcb46;
+}
+
+>>>>>>> f0475e3d962210f65e9b6d664030335eb52578be
+/* HEADING PAGE */
+.header-page {
+  background-color: #579c87;
+  padding: 1.5rem;
+  margin-bottom: 25px;
+}
+.header-page h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+<<<<<<< HEAD
+html, body {
+  /* GENERALS PROPERTIES */
+  font-family: "Monserrat", sans-serif;
+  color: #fdcb46;
+}
+
+=======
+>>>>>>> f0475e3d962210f65e9b6d664030335eb52578be
+/* MAIN PAGE */
+.main-page {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* MENUS */
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* ONE MENU */
+}
+.menu-list .menu-item {
+  width: 400px;
+  height: 550px;
+  display: flex;
+  margin: 25px 12.5px 25px 12.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 1px 1px #f9f9f9;
+  border: 1px solid black;
+}
+.menu-list .menu-item__ > h2 {
+  font-size: 1rem;
+}
+.menu-list .menu-item__logo {
+  background: no-repeat;
+  height: 54px;
+  width: 50px;
+}
+.menu-list .menu-item__heading {
+  font-size: 3rem;
+}
+.menu-list .menu-item--enchanted {
+  font-family: "Devonshire", cursive;
+  background-color: #fcdfdb;
+}
+.menu-list .menu-item--french {
+  font-family: "Croissant One", cursive;
+  background-color: #fff5fe;
+}
+.menu-list .menu-item--tasty {
+  font-family: "Dancing Script", cursive;
+  background-color: #f9f9f9;
+}
+.menu-list .menu-item--palet {
+  font-family: "Kaushan Script", cursive;
+  background-color: #fdfffd;
+}
+.menu-list .btn {
+  background-color: #579c87;
+  border: 1px solid #fdcb46;
+  height: 50px;
+  width: 50%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-list .btn p {
+  color: #fdcb46;
+}
+
+/* FOOTER PAGE */
+.footer-page {
+  background-color: #579c87;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding: 0 10px 0 10px;
+}
+.footer-page.footer-page-item > a {
+  display: block;
+  color: #fdcb46;
+}
+
+/*# sourceMappingURL=style.css.map */
