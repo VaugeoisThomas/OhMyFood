@@ -1,0 +1,9 @@
+.footer-page{
+    display: flex;
+    background-color: $primary-color;
+    height: 35px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: $margin_structure_page;
+    width: auto;     
+}

@@ -1,0 +1,13 @@
+.btn--next{
+    margin: $margin_structure_page;
+    background-color: #579c87;
+    color: #fdcb46;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    height: 50px;
+
+    & > a {
+        font-size: 20px;
+    }
+}
