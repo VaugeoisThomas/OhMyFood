@@ -1,11 +1,15 @@
 /* HEADING PAGE */
-.header-page{
+.header-page {
     background-color: $primary-color;
-    padding: 1.5rem;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 25px;
-    h1{
-        font-size: 5rem;
-        font-weight: bold;
-        text-align: center;
+    width: auto;
+    & > h1 {
+        //text-align: center;
+        font-weight: bolder;
+        font-size: 35px;
     }
 }
