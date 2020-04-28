@@ -1,9 +1,19 @@
+/* FOOTER */
 .footer-page{
-    display: flex;
-    background-color: $primary-color;
     height: 35px;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
     margin-top: $margin_structure_page;
-    width: auto;     
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0px;  
+    background-color: $primary-color;
+
+    &--item {
+        margin: 0 10px;
+    }
 }

@@ -1,6 +1,4 @@
-@import "../components/btn";
-@import "../components/menu";
-
+/* MAIN PAGE */
 .main-page{
     display: flex;
     flex-direction: column;
@@ -8,3 +6,7 @@
     width: 80%;
     margin: auto;
 }
+
+/* MENU AND BTN*/
+@import "../components/menu";
+@import "../components/item";
