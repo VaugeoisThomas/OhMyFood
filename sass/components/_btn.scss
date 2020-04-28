@@ -1,7 +1,7 @@
 .btn--next{
-    margin: $margin_structure_page;
-    background-color: #579c87;
-    color: #fdcb46;
+    margin-top: $margin_structure_page;
+    margin-bottom: 65px;
+    background-color: $primary-color;
     border-radius: 10px;
     border: none;
     width: 60%;
@@ -9,5 +9,6 @@
 
     & > a {
         font-size: 20px;
+        color: #fdcb46;
     }
 }
