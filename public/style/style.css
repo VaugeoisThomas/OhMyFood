@@ -89,13 +89,6 @@ html, body {
   font-family: "Kaushan Script", cursive, sans-serif;
 }
 
-.item__link {
-  font-family: "Segoe Print", Tahoma, Geneva, Verdana, sans-serif;
-}
-.item__link--frenchy {
-  font-family: "Croissant one", cursive, sans-serif;
-}
-
 .btn {
   margin-top: 15px;
   margin-bottom: 65px;
