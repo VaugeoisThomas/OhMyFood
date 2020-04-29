@@ -3,17 +3,23 @@
     flex-wrap: wrap;
     width: 100%;
     &__item {
+        //taille des blocs hauteur et largeur
         width: calc(50% - 30px);
         height: 28.5vh;
-        box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);
-        margin: $margin_structure_page;
+        
+        box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);//on applique une ombre sur les blocs
+        margin: $margin_structure_page; // On applique une marge externe
+        
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        background-color: rgb(252,223,219);
-        color: #3c1319;
-        font-family: $enchanted_menu_family;
+        
+        & > :last-child{
+            margin-top: 15px;
+        }
+
+        @include typography($enchanted_menu_family, rgb(252,223,219), #3c1319);
         & > .item__link {
             font-family: 'Segoe Print', sans-serif;
             font-weight: bold;
@@ -22,39 +28,24 @@
             width: 20px;
         }
         &--frenchy {
-            background-color: rgb(255,245,254);
-            color: #ca7411;
-            font-family: $frenchy_menu_family;
+            @include typography($frenchy_menu_family, rgb(255,245,254), #ca7411);
             & > .item__link{
                 font-family: $frenchy_menu_family;
             }
             & > .item__preview{
-                background-image: linear-gradient(90deg, #ca7411, #8865dd);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+                @include gradient(90deg, #ca7411, #8865dd);
             }
         }
         &--tasty {
-            background-color: rgb(249,249,249);
-            font-family: $tasty_menu_family;
-            color: #0f86ee;
+            @include typography($tasty_menu_family, rgb(249,249,249), #0f86ee);
             & > .item__preview {
-                background-image: linear-gradient(90deg, #16338f, #138dfa);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+                @include gradient(90deg, #16338f, #138dfa);
             }
         }
         &--palet {
-            background-color: rgb(253,255,253);
-            font-family: $palet_menu_family;
-            color: #71c259;
+            @include typography($palet_menu_family, rgb(253,255,253), #71c259);
             &  > .item__preview {
-                background-image: linear-gradient(90deg, #47a044, #c0fc80);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+                @include gradient(90deg, #47a044, #c0fc80);
             }
         }
     }

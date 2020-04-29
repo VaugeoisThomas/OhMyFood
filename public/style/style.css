@@ -72,11 +72,14 @@ html, body {
   margin: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  font-family: "Devonshire", sans-serif;
   background-color: #fcdfdb;
   color: #3c1319;
-  font-family: "Devonshire", sans-serif;
+}
+.menus__item > :last-child {
+  margin-top: 15px;
 }
 .menus__item > .item__link {
   font-family: "Segoe Print", sans-serif;
@@ -86,9 +89,9 @@ html, body {
   width: 20px;
 }
 .menus__item--frenchy {
+  font-family: "Croissant one", cursive, sans-serif;
   background-color: #fff5fe;
   color: #ca7411;
-  font-family: "Croissant one", cursive, sans-serif;
 }
 .menus__item--frenchy > .item__link {
   font-family: "Croissant one", cursive, sans-serif;
@@ -100,8 +103,8 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 .menus__item--tasty {
-  background-color: #f9f9f9;
   font-family: "Dancing Script", cursive, sans-serif;
+  background-color: #f9f9f9;
   color: #0f86ee;
 }
 .menus__item--tasty > .item__preview {
@@ -111,8 +114,8 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 .menus__item--palet {
-  background-color: #fdfffd;
   font-family: "Kaushan Script", cursive, sans-serif;
+  background-color: #fdfffd;
   color: #71c259;
 }
 .menus__item--palet > .item__preview {

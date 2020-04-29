@@ -1,0 +1,12 @@
+@mixin gradient ($deg, $first, $end) {
+    background-image: linear-gradient($deg, $first, $end);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin typography($font-family, $background, $color) {
+    font-family: $font-family;
+    background-color: $background;
+    color: $color;
+}
