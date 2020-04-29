@@ -45,7 +45,7 @@ html, body {
   align-items: center;
   margin-bottom: 15px;
 }
-.header-page > h1 {
+.header-page > .header-link {
   font-weight: bolder;
   font-size: 2em;
 }
