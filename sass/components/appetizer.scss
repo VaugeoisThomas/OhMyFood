@@ -1,0 +1,13 @@
+.appetizer{
+    width: 100%;
+
+    &-heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-bar--reversed{
+            transform:scaleX(-1);
+            width: 30%;
+        }
+    }
+}

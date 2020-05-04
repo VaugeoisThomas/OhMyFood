@@ -51,31 +51,42 @@
     }
 }
 
-.menu__enchanted{
+.menu{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    &--heading{
-        @include typography( 'Montserrat', white, black);
-        font-weight: bold;
+
+    &__title{
+        margin-bottom: 2%;
+        border: 1px solid red;
     }
-    &--content{
-        margin-top: 2%;
+    &__content {
+        box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);//on applique une ombre sur les blocs
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        
+        &--enchanted{
+            @include typography($enchanted-font-family, $enchanted-background-color, $enchanted-color);
+        }
+    }
+    &__content-heading{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%; 
+    }
+    &__content-description{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);
-        @include typography($enchanted-font-family, rgb(252,223,219), #3c1319);
-
-        & > .content__heading{
-            border: 1px solid black;
-            width: 100%;
-            
-        }
-        & > .content__page{
-            border: 1px solid black;
-            width: 100%;
-        }
+        width: 100%;
+        margin-top: 2%; 
+    }
+    &__content-footer{
+        border: 1px solid black;
     }
 }
