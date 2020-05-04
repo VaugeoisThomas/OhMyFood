@@ -8,7 +8,7 @@
         height: 28.5vh;
         
         box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);//on applique une ombre sur les blocs
-        margin: $margin_structure_page; // On applique une marge externe
+        margin: $margin-structure-page; // On applique une marge externe
         
         display: flex;
         flex-direction: column;
@@ -19,7 +19,7 @@
             margin-top: 15px;
         }
 
-        @include typography($enchanted_menu_family, rgb(252,223,219), #3c1319);
+        @include typography($enchanted-font-family, $enchanted-background-color, $enchanted-color);
         & > .item__link {
             font-family: 'Segoe Print', sans-serif;
             font-weight: bold;
@@ -28,22 +28,22 @@
             width: 20px;
         }
         &--frenchy {
-            @include typography($frenchy_menu_family, rgb(255,245,254), #ca7411);
+            @include typography($frenchy-font-family, $frenchy-background-color, $frenchy-color);
             & > .item__link{
-                font-family: $frenchy_menu_family;
+                font-family: $frenchy-font-family;
             }
             & > .item__preview{
                 @include gradient(90deg, #ca7411, #8865dd);
             }
         }
         &--tasty {
-            @include typography($tasty_menu_family, rgb(249,249,249), #0f86ee);
+            @include typography($tasty-font-family, $tasty-background-color, $tasty-color);
             & > .item__preview {
                 @include gradient(90deg, #16338f, #138dfa);
             }
         }
         &--palet {
-            @include typography($palet_menu_family, rgb(253,255,253), #71c259);
+            @include typography($palet-font-family, $palet-background-color, $palet-color);
             &  > .item__preview {
                 @include gradient(90deg, #47a044, #c0fc80);
             }
@@ -66,7 +66,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);
-        @include typography($enchanted_menu_family, rgb(252,223,219), #3c1319);
+        @include typography($enchanted-font-family, rgb(252,223,219), #3c1319);
 
         & > .content__heading{
             border: 1px solid black;
