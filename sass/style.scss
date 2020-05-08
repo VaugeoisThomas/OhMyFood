@@ -1,9 +1,23 @@
+// UTILS
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/map";
+
+// BASE
 @import "base/reset";
 @import "base/typography";
+
+// COMPONENTS
+@import "components/menu-card";
+@import "components/btn";
+
+// LAYOUT
 @import "layout/header";
 @import "layout/main";
-@import "components/btn";
 @import "layout/footer";
+
+// PAGES
+@import "pages/enchanted.scss";
+//@import "pages/tasty.scss";
+//@import "pages/french.scss";
+//@import "pages/palet.scss";
