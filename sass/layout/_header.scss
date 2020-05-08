@@ -1,11 +1,10 @@
 /* HEADING PAGE */
 .header-page {
     background-color: $primary-color;
-    height: 60px;
+    min-height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: $margin-structure-page;
     & > .header-link {
         font-weight: bolder;
         font-size: 2em;

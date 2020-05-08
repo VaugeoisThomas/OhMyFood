@@ -1,19 +1,19 @@
 /* FOOTER */
 .footer-page{
-    height: 35px;
-    width: 100%;
-    margin-top: $margin-structure-page;
+    min-height: 35px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    
 
-    position: fixed;
+    position: sticky;
     bottom: 0px;  
     background-color: $primary-color;
 
-    &__item {
+    &-link {
         margin: 0 10px;
+        font-size: 0.75em;
     }
 }

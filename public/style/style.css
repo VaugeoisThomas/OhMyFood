@@ -23,27 +23,30 @@ ol, ul {
 }
 
 a {
-  font-size: 100%;
   text-decoration: none;
 }
 a:link, a:visited {
   color: inherit;
 }
 
+p {
+  font-size: 0.75em;
+}
+
 /* END OF RESET */
 html, body {
   font-family: "Monserrat", sans-serif;
   color: #fdcb46;
+  margin: auto;
 }
 
 /* HEADING PAGE */
 .header-page {
   background-color: #579c87;
-  height: 60px;
+  min-height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
 }
 .header-page > .header-link {
   font-weight: bolder;
@@ -55,70 +58,84 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
   margin: auto;
 }
 
 /* MENU AND BTN*/
 .menus {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
-.menus__item {
+@media (max-width: 599px) {
+  .menus {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.menus-item {
   width: calc(50% - 30px);
-  height: 28.5vh;
+  height: 195px;
   box-shadow: 0px 0px 5px 2px #ededed;
-  margin: 15px;
+  margin: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.menus-item > .item-preview {
+  margin-bottom: 10px;
+}
+.menus-item > .item-link {
+  font-family: "Segoe Print", sans-serif;
+  font-weight: bold;
+}
+.menus-item--enchanted {
   font-family: "Devonshire", sans-serif;
   background-color: #fcdfdb;
   color: #3c1319;
 }
-.menus__item > :last-child {
-  margin-top: 15px;
+.menus-item--enchanted > .item-logo {
+  margin-bottom: 0;
+  max-width: 15px;
 }
-.menus__item > .item__link {
-  font-family: "Segoe Print", sans-serif;
-  font-weight: bold;
+.menus-item--enchanted > .item-logo img {
+  width: 100%;
 }
-.menus__item > .item__logo {
-  width: 20px;
-}
-.menus__item--frenchy {
+.menus-item--frenchy {
   font-family: "Croissant one", cursive, sans-serif;
   background-color: #fff5fe;
   color: #ca7411;
 }
-.menus__item--frenchy > .item__link {
+.menus-item--frenchy > .item-link {
   font-family: "Croissant one", cursive, sans-serif;
 }
-.menus__item--frenchy > .item__preview {
+.menus-item--frenchy > .item-preview {
   background-image: linear-gradient(90deg, #ca7411, #8865dd);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menus__item--tasty {
+.menus-item--tasty {
   font-family: "Dancing Script", cursive, sans-serif;
   background-color: #f9f9f9;
   color: #0f86ee;
 }
-.menus__item--tasty > .item__preview {
+.menus-item--tasty > .item-preview {
   background-image: linear-gradient(90deg, #16338f, #138dfa);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menus__item--palet {
+.menus-item--palet {
   font-family: "Kaushan Script", cursive, sans-serif;
   background-color: #fdfffd;
   color: #71c259;
 }
-.menus__item--palet > .item__preview {
+.menus-item--palet > .item-preview {
   background-image: linear-gradient(90deg, #47a044, #c0fc80);
   -webkit-background-clip: text;
   background-clip: text;
@@ -166,7 +183,9 @@ html, body {
 }
 
 .card {
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2%;
 }
 .card-heading {
   display: flex;
@@ -177,36 +196,49 @@ html, body {
   transform: scaleX(-1);
   width: 30%;
 }
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.card-content-desc {
+  width: 70%;
+  font-size: 1em;
+}
+.card-content-price {
+  width: 30%;
+}
 
 .btn {
-  margin-top: 15px;
-  margin-bottom: 65px;
   background-color: #579c87;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   width: 50%;
-  height: 40px;
+  height: 30px;
+  margin: 15px;
 }
 .btn > a {
-  font-size: 20px;
+  font-size: 1.5em;
   color: #fdcb46;
 }
 
 /* FOOTER */
 .footer-page {
-  height: 35px;
-  width: 100%;
-  margin-top: 15px;
+  min-height: 35px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  position: fixed;
+  justify-content: space-between;
+  position: sticky;
   bottom: 0px;
   background-color: #579c87;
 }
-.footer-page__item {
+.footer-page-link {
   margin: 0 10px;
+  font-size: 0.75em;
 }
 
 /*# sourceMappingURL=style.css.map */

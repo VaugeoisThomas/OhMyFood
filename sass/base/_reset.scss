@@ -24,11 +24,14 @@ ol, ul {
 }
 
 a {
-  font-size: 100%;
   text-decoration: none;
 
   &:link , &:visited{
     color: inherit;
   }
+}
+
+p{
+  font-size: 0.75em;
 }
 /* END OF RESET */
