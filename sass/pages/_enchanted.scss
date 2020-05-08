@@ -1,0 +1,15 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    
+    &-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &-body {
+        display: flex;
+        flex-direction: row;
+    }
+}
