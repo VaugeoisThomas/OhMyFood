@@ -1,11 +1,12 @@
 /* MAIN PAGE */
 .main-page{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin: auto;
-}
+    max-width: 70%;
 
-/* MENU AND BTN*/
-@import "../components/menu";
-@import "../components/card.scss";
+    padding: 20px;
+}
