@@ -106,45 +106,6 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-  box-shadow: 0px 0px 5px 2px #ededed;
-  height: 520px;
-  width: 400px;
-}
-.card-header {
-  display: flex;
-  flex-direction: row;
-}
-.card-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 2%;
-  margin-top: 2%;
-}
-.card-content__desc {
-  width: 70%;
-  font-size: 1em;
-}
-.card-content__price {
-  width: 30%;
-}
-.card--enchanted {
-  background-color: #fcdfdb;
-}
-.card--frenchy {
-  background-color: #fff5fe;
-}
-.card--tasty {
-  background-color: #f9f9f9;
-}
-.card--palet {
-  background-color: #fdfffd;
-}
-
 .btn {
   background-color: #579c87;
   border-radius: 5px;
