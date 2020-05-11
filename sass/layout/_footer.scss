@@ -1,19 +1,19 @@
 /* FOOTER */
 .footer-page{
     min-height: 40px;
-
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     
 
-    position: sticky;
+    position: fixed;
     bottom: 0px;  
     background-color: $primary-color;
 
     &__link {
         margin: 0 10px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
