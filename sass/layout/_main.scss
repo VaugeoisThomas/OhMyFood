@@ -1,15 +1,15 @@
 /* MAIN PAGE */
 .main-page{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+
     margin: auto;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 500px;
+
     @include tablet-only {
-        flex-direction: column;
-        width: 100%;     
+        margin: 0;
+        max-width: 100%;
     }
 }
