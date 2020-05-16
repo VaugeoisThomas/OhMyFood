@@ -1,5 +1,5 @@
 .card{
-    border: 1px solid black;
+    
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -12,7 +12,6 @@
         margin: none;
         &__bar{
             flex: 1;
-            border: 1px dotted purple;
         }
         &__bar > img {
             width: 100%;
@@ -22,9 +21,9 @@
         }
     }
     &-content{
-        border: 1px dotted purple;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         
         margin-bottom: 2%;
         margin-top: 2%;
