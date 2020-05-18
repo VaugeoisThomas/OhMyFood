@@ -10,7 +10,7 @@
     
     &-logo {
         margin-bottom: 0;
-        max-width: 15px;
+        max-width: 50px;
         & img{
             width: 100%;
         }
@@ -22,7 +22,6 @@
         font-family: 'Segoe Print', sans-serif;
         font-weight: bold;
     }
-
     @each $name, $value in $menus{
         &--#{$name}{
             background-color: map-get($value, bckg-c);
@@ -34,4 +33,15 @@
     @include tablet-only {
         width: 100%;
     }
+
+    &--frenchy > .menu-title {
+        @include gradient(90deg, #ca7411, #8865dd)
+    }
+    &--tasty > .menu-title {
+        @include gradient(90deg, #16338f, #138dfa)
+    }
+    &--palet > .menu-title {
+        @include gradient(90deg, #47a044, #c0fc80)
+    }
+    
 }

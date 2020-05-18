@@ -55,11 +55,11 @@ html, body {
   width: 300px;
   height: 450px;
   margin: 3%;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .menu-logo {
   margin-bottom: 0;
-  max-width: 15px;
+  max-width: 50px;
 }
 .menu-logo img {
   width: 100%;
@@ -100,13 +100,37 @@ html, body {
     width: 100%;
   }
 }
+.menu--frenchy > .menu-title {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
+  background-image: -o-linear-gradient(left, #ca7411, #8865dd);
+  background-image: linear-gradient(90deg, #ca7411, #8865dd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--tasty > .menu-title {
+  background-image: -webkit-gradient(linear, left top, right top, from(#16338f), to(#138dfa));
+  background-image: -o-linear-gradient(left, #16338f, #138dfa);
+  background-image: linear-gradient(90deg, #16338f, #138dfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--palet > .menu-title {
+  background-image: -webkit-gradient(linear, left top, right top, from(#47a044), to(#c0fc80));
+  background-image: -o-linear-gradient(left, #47a044, #c0fc80);
+  background-image: linear-gradient(90deg, #47a044, #c0fc80);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .page {
   display: flex;
   flex-flow: column wrap;
   margin: 3%;
   padding: 3%;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .page-heading {
   display: flex;
