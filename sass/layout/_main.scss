@@ -1,12 +1,8 @@
 /* MAIN PAGE */
-.main-page{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-
+main{
     margin: auto;
-    max-width: 500px;
+    padding-bottom: $margin-structure-page;
+    max-width: 1000px;
 
     @include tablet-only {
         margin: 0;

@@ -1,12 +1,13 @@
 /* HEADING PAGE */
-.header-page {
+header {
     background-color: $primary-color;
-    min-height: 70px;
+    min-height: 10.2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    & > .header-link {
-        font-weight: bolder;
-        font-size: 2em;
+    margin-bottom: $margin-structure-page;
+    .header-link{
+        font-size: 1.7em;
+        font-weight: bold;
     }
 }

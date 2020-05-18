@@ -15,57 +15,65 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header-page">
+    <header>
         <a href="/" class="header-link"><h1>ohmyfood</h1></a>
     </header>
 
     <!-- MAIN -->
-    <main class="main-page">
-        <div class="container">
+    <main>
+        <section class="navigation">
             <!-- FIRST MENU -->
-            <section class="menu-card menu-card--enchanted">
-                <figure class="menu-card__logo">
+            <article class="menu menu--enchanted">
+                <figure class="menu-logo">
                     <img src="public/img/logo-note-petit.png" alt="note de musique">
                 </figure>
-                <div class="menu-card__title"><p>La note enchantée</p></div>
-                <div class="menu-card__link">
+                <div class="menu-title">
+                    <p>La note enchantée</p>
+                </div>
+                <div class="menu-link">
                     <a href="./pages/enchanted.html">MENU</a>
                 </div>
-            </section>
+            </article>
 
             <!-- SECOND MENU -->
-            <section class="menu-card menu-card--frenchy">
-                <div class="menu-card__title"><p>Le chic à la française</p></div>
-                <div class="menu-card__link">
-                    <a href="./pages/frenchy.html">Menu</a>
+            <article class="menu menu--frenchy">
+                <div class="menu-title">
+                    <p>Le chic à la française</p>
                 </div>
-            </section>
+                <div class="menu-link">
+                    <a href="#">Menu</a>
+                </div>
+            </article>
 
             <!-- THIRD MENU -->
-            <section class="menu-card menu-card--tasty">
-                <div class="menu-card__title"><p>Le délice des papilles</p></div>
-                <div class="menu-card__link">
-                    <a href="./pages/tasty.html">Menu</a>
+            <article class="menu menu--tasty">
+                <div class="menu-title">
+                    <p>Le délice des papilles</p>
                 </div>
-            </section>
+                <div class="menu-link">
+                    <a href="#">Menu</a>
+                </div>
+            </article>
 
             <!-- FOURTH MENU -->
-            <section class="menu-card menu-card--palet">
-                <div class="menu-card__title"><p>La palette du goût</p></div>
-                <div class="menu-card__link">
-                    <a href="./pages/palet.html">Menu</a>
+            <article class="menu menu--palet">
+                <div class="menu-title">
+                    <p>La palette du goût</p>
                 </div>
-            </section>
-        </div>
-        <div class="container">
+                <div class="menu-link">
+                    <a href="#">Menu</a>
+                </div>
+            </article>
+        </section>
+        <section class="navigation">
             <button class="btn btn--menu">
                 <a href="#">Prochainement</a>
             </button>
-        </div>
+        </section>
     </main>
     
     <!-- FOOTER -->
-    <footer class="footer-page">
+    <footer>
         <a href="legal-notice.html" class="footer-page__link">Mentions légales</a>
         <a href="mailto:contact@ohmyfood.fr" class="footer-page__link">Contactez-nous</a>
     </footer>

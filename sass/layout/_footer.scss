@@ -1,5 +1,5 @@
 /* FOOTER */
-.footer-page{
+footer{
     min-height: 40px;
     width: 100%;
     display: flex;
@@ -12,8 +12,12 @@
     bottom: 0px;  
     background-color: $primary-color;
 
-    &__link {
+    .footer-link {
         margin: 0 10px;
         font-size: 0.9em;
+    }
+
+    @include tablet-only {
+        flex-direction: column;
     }
 }

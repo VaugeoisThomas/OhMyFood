@@ -1,0 +1,20 @@
+@mixin gradient ($deg, $first, $end) {
+    background-image: -webkit-gradient(linear, left top, right top, from($first), to($end));
+    background-image: -o-linear-gradient(left, $first, $end);
+    background-image: linear-gradient($deg, $first, $end);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin typography($font-family, $background, $color) {
+    font-family: $font-family;
+    background-color: $background;
+    color: $color;
+}
+
+@mixin tablet-only {
+    @media screen and (max-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
