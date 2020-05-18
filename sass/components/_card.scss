@@ -20,13 +20,14 @@
         &__bar--reversed{
             transform:scaleX(-1);
         }
+        border: 1px dotted red;
     }
     &-body {
         display: flex;
         flex-direction: column;
+        border: 1px dotted purple;
     }
     &-content {
-
         display: flex;
         flex-direction: row;
         margin-bottom: 2%;
