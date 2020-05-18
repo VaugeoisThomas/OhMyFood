@@ -88,6 +88,8 @@ html, body {
   color: #ca7411;
 }
 .menu-card--frenchy > .menu-card__title {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
+  background-image: -o-linear-gradient(left, #ca7411, #8865dd);
   background-image: linear-gradient(90deg, #ca7411, #8865dd);
   -webkit-background-clip: text;
   background-clip: text;
@@ -102,6 +104,8 @@ html, body {
   color: #0f86ee;
 }
 .menu-card--tasty > .menu-card__title {
+  background-image: -webkit-gradient(linear, left top, right top, from(#16338f), to(#138dfa));
+  background-image: -o-linear-gradient(left, #16338f, #138dfa);
   background-image: linear-gradient(90deg, #16338f, #138dfa);
   -webkit-background-clip: text;
   background-clip: text;
@@ -113,6 +117,8 @@ html, body {
   color: #71c259;
 }
 .menu-card--palet > .menu-card__title {
+  background-image: -webkit-gradient(linear, left top, right top, from(#47a044), to(#c0fc80));
+  background-image: -o-linear-gradient(left, #47a044, #c0fc80);
   background-image: linear-gradient(90deg, #47a044, #c0fc80);
   -webkit-background-clip: text;
   background-clip: text;
@@ -128,26 +134,61 @@ html, body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1em;
+  margin-top: 14px;
+  padding: 14px;
+  min-height: 100vh;
+}
+.menu__heading {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  border: 1px dotted black;
+}
+.menu--frenchy {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
+  background-image: -o-linear-gradient(left, #ca7411, #8865dd);
+  background-image: linear-gradient(180deg, #ca7411, #8865dd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--frenchy .menu__heading > h2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
+  background-image: -o-linear-gradient(left, #ca7411, #8865dd);
+  background-image: linear-gradient(90deg, #ca7411, #8865dd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu--enchanted {
   background-color: #fcdfdb;
   color: #3c1319;
+  font-family: "Devonshire", sans-serif;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 .menu--frenchy {
   background-color: #fff5fe;
   color: #ca7411;
+  font-family: "Croissant one", cursive, sans-serif;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 .menu--tasty {
   background-color: #f9f9f9;
   color: #0f86ee;
+  font-family: "Dancing Script", cursive, sans-serif;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 .menu--palet {
   background-color: #fdfffd;
   color: #71c259;
+  font-family: "Kaushan Script", cursive, sans-serif;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 
@@ -155,6 +196,7 @@ html, body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 5%;
 }
 .card-heading {
   display: flex;
@@ -167,23 +209,26 @@ html, body {
   flex: 1;
 }
 .card-heading__bar > img {
-  width: 100%;
+  width: 80%;
 }
 .card-heading__bar--reversed {
   transform: scaleX(-1);
 }
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
 .card-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 2%;
   margin-top: 2%;
 }
 .card-content__desc {
-  width: 70%;
+  width: 90%;
 }
 .card-content__price {
-  width: 30%;
+  width: 10%;
 }
 .card-content__price:after {
   content: "€";
