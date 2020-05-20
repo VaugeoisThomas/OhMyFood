@@ -127,10 +127,11 @@ html, body {
 
 .page {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   margin: 3%;
   padding: 3%;
   font-size: 1.5em;
+  justify-content: center;
 }
 .page-heading {
   display: flex;
@@ -146,26 +147,33 @@ html, body {
 .page-footer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   border: 1px solid blue;
+}
+.page-footer figure {
+  width: 25px;
+}
+.page-footer figure > img {
+  width: 100%;
 }
 .page--enchanted {
   background-color: #fcdfdb;
-  color: #3c1319;
+  color: black;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 .page--frenchy {
   background-color: #fff5fe;
-  color: #ca7411;
+  color: black;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 .page--tasty {
   background-color: #f9f9f9;
-  color: #0f86ee;
+  color: black;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 .page--palet {
   background-color: #fdfffd;
-  color: #71c259;
+  color: black;
   box-shadow: 0px 0px 5px 2px #ededed;
 }
 @media screen and (max-width: 599px) {
@@ -212,6 +220,15 @@ html, body {
 }
 .card-content__price:after {
   content: "€";
+}
+.card--orange {
+  color: #c67412;
+}
+.card--purple {
+  color: #a56799;
+}
+.card--blue {
+  color: #6e4ccc;
 }
 
 .btn {
