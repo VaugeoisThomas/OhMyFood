@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* RESET PROPERTIES */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Montserrat&display=swap");
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, u, i, center, ol, ul, li, article, aside,
 footer, header, menu, nav, section, figure {
   margin: 0;
@@ -219,6 +220,20 @@ html, body {
 .card-heading h3 {
   width: 50%;
   text-align: center;
+  display: block;
+}
+.card-heading h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+  background-color: black;
+}
+.card-heading h3:hover::after {
+  transform: scaleX(1);
 }
 .card-heading__bar > img {
   display: flex;
