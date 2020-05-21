@@ -53,6 +53,7 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 300px;
+  max-height: 450px;
   height: 450px;
   margin: 3%;
   font-size: 1.5em;
@@ -265,8 +266,32 @@ html, body {
   margin: 15px;
 }
 .btn > a {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fdcb46;
+}
+
+@keyframes formation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.dot {
+  animation: formation 3s backwards infinite;
+}
+.dot--first {
+  animation-delay: 300ms;
+}
+.dot--second {
+  animation-delay: 600ms;
+}
+.dot--third {
+  animation-delay: 900ms;
 }
 
 /* HEADING PAGE */

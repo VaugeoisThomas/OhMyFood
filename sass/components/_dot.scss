@@ -1,0 +1,24 @@
+@keyframes formation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.dot {
+    animation: formation 3s backwards infinite;
+    &--first {
+        animation-delay: 300ms;
+    }
+    &--second {
+        animation-delay: 600ms;
+    }
+    &--third {
+        animation-delay: 900ms;
+    }
+}
