@@ -1,17 +1,27 @@
 .card{
     display: flex;
     flex-direction: column;
+    //border: 1px solid red;
+    margin-bottom: $margin-structure-page;
     &-heading{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         margin: 0;
+        font-weight: bold;
+
+        h3{
+            width: 50%;
+            text-align:center;
+        }
         &__bar {
-            flex: 1;
+            //width: calc((50% / 2));
         }
         &__bar > img {
-            width: 80%;
+            display: flex;
+            align-items: center;
+            width: 100%;
         }
         &__bar--reversed{
             transform:scaleX(-1);
@@ -28,10 +38,11 @@
         margin-top: 2%;
 
         &__desc{
-            width: 90%;
+            width: 89%;
         }
         &__price{
-            width: 10%;
+            width: 11%;
+            font-weight: bold;
         }
         &__price:after {
             content: "€";

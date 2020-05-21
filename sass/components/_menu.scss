@@ -7,7 +7,15 @@
     height: 450px;
     margin: $margin-structure-page;
     font-size: $font-size-site;
+    opacity: 1;
+    transition:
+        font-size 300ms ease-in-out,
+        opacity 300ms ease-in-out;
     
+    &:hover {
+        opacity: 0.8;
+        font-size: 2em;
+    }
     &-logo {
         margin-bottom: 0;
         max-width: 50px;

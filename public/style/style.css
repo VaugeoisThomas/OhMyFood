@@ -56,6 +56,12 @@ html, body {
   height: 450px;
   margin: 3%;
   font-size: 1.5em;
+  opacity: 1;
+  transition: font-size 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+.menu:hover {
+  opacity: 0.8;
+  font-size: 2em;
 }
 .menu-logo {
   margin-bottom: 0;
@@ -132,23 +138,25 @@ html, body {
   padding: 3%;
   font-size: 1.5em;
   justify-content: center;
+  color: black;
+  font-family: "Segoe Print", sans-serif;
+  box-shadow: 0px 0px 5px 2px #ededed;
 }
 .page-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
   margin-bottom: 3%;
+  font-family: "Devonshire", sans-serif;
 }
 .page-body {
-  border: 1px solid red;
   margin-bottom: 3%;
 }
 .page-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid blue;
+  font-family: "Devonshire", sans-serif;
 }
 .page-footer figure {
   width: 25px;
@@ -158,23 +166,35 @@ html, body {
 }
 .page--enchanted {
   background-color: #fcdfdb;
-  color: black;
-  box-shadow: 0px 0px 5px 2px #ededed;
+}
+.page--enchanted .page-heading, .page--enchanted .page-footer {
+  font-family: "Devonshire", sans-serif;
 }
 .page--frenchy {
   background-color: #fff5fe;
-  color: black;
-  box-shadow: 0px 0px 5px 2px #ededed;
+}
+.page--frenchy .page-heading, .page--frenchy .page-footer {
+  font-family: "Croissant one", cursive, sans-serif;
+}
+.page--frenchy .page-heading {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
+  background-image: -o-linear-gradient(left, #ca7411, #8865dd);
+  background-image: linear-gradient(90deg, #ca7411, #8865dd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .page--tasty {
   background-color: #f9f9f9;
-  color: black;
-  box-shadow: 0px 0px 5px 2px #ededed;
+}
+.page--tasty .page-heading, .page--tasty .page-footer {
+  font-family: "Dancing Script", cursive, sans-serif;
 }
 .page--palet {
   background-color: #fdfffd;
-  color: black;
-  box-shadow: 0px 0px 5px 2px #ededed;
+}
+.page--palet .page-heading, .page--palet .page-footer {
+  font-family: "Kaushan Script", cursive, sans-serif;
 }
 @media screen and (max-width: 599px) {
   .page {
@@ -185,19 +205,24 @@ html, body {
 .card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3%;
 }
 .card-heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin: 0;
+  font-weight: bold;
 }
-.card-heading__bar {
-  flex: 1;
+.card-heading h3 {
+  width: 50%;
+  text-align: center;
 }
 .card-heading__bar > img {
-  width: 80%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .card-heading__bar--reversed {
   transform: scaleX(-1);
@@ -213,10 +238,11 @@ html, body {
   margin-top: 2%;
 }
 .card-content__desc {
-  width: 90%;
+  width: 89%;
 }
 .card-content__price {
-  width: 10%;
+  width: 11%;
+  font-weight: bold;
 }
 .card-content__price:after {
   content: "€";
