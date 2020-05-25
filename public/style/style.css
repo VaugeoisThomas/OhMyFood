@@ -159,6 +159,11 @@ p {
 .page-heading > h2 {
   font-size: 2em;
 }
+@media screen and (max-width: 432px) {
+  .page-heading > figure {
+    width: 30px;
+  }
+}
 .page-body {
   margin-bottom: 3%;
 }
@@ -173,6 +178,11 @@ p {
 }
 .page-footer figure > img {
   width: 100%;
+}
+@media screen and (max-width: 432px) {
+  .page-footer {
+    margin-bottom: 10%;
+  }
 }
 .page--enchanted {
   background-color: #fcdfdb;
@@ -359,6 +369,12 @@ p {
   .btn {
     width: 90%;
     margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 432px) {
+  .btn {
+    width: 90%;
+    margin-bottom: 10%;
   }
 }
 

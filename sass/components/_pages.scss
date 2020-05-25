@@ -24,6 +24,12 @@
         & > h2 {
             font-size: 2em;
         }
+
+        @include mobile-only {
+            & > figure {
+                width: 30px;
+            }
+        }
     }
 
     &-body{
@@ -41,6 +47,10 @@
 
         figure > img {
             width: 100%;
+        }
+
+        @include mobile-only {
+            margin-bottom: 10%;
         }
     }
 

@@ -15,4 +15,9 @@
         width: 90%;
         margin-bottom: 5%;
     }
+
+    @include mobile-only {
+        width: 90%;
+        margin-bottom: 10%;
+    }
 }
