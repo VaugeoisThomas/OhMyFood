@@ -1,3 +1,15 @@
+@keyframes move {
+    0% {
+        transform: translate(5px, 0px) rotate(6deg)
+    }
+    50% {
+        transform: translate(-5px, 0px) rotate(-5deg)
+    }
+    100% {
+        transform: translate(5px, 0px) rotate(5deg)       
+    }
+}
+
 /* FOOTER */
 footer{
     min-height: 40px;
@@ -12,10 +24,14 @@ footer{
     bottom: 0px;  
     background-color: $primary-color;
 
-    .footer-link {
-        margin: 0 10px;
-        font-size: 0.9em;
+    & > .footer-page__link {
+        margin: 0 25px;
+        font-size: 1.2em;
     }
+    & > a:hover {
+        animation: move 500ms;
+        animation-iteration-count: infinite;
+  }
 
     @include tablet-only {
         flex-direction: column;

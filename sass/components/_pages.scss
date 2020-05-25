@@ -2,8 +2,8 @@
     display: flex;
     flex-flow: row wrap;
     margin: $margin-structure-page;
-    padding: $margin-structure-page;
-    font-size: $font-size-site;
+    padding: 0 5%;
+    font-size: 1.5em;
     justify-content: center;
     color: black;
     font-family: 'Segoe Print', sans-serif;
@@ -13,9 +13,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: $margin-structure-page;
-        font-family: $enchanted-font-family;
+        margin: 15% 0;
+        //font-family: $enchanted-font-family;
+
+        & > figure {
+            width: 70px;
+        }
+        & > figure > img {
+            width: 100%;
+        }
+        & > h2 {
+            font-size: 2em;
+        }
     }
+
     &-body{
         margin-bottom: $margin-structure-page;
     }
@@ -43,8 +54,16 @@
         }
         @if $name == "frenchy" {
             &--#{$name} {
+                font-family: "Montserrat";
                 .page-heading {
                     @include gradient(90deg, #ca7411, #8865dd);
+                }
+            }
+        }        
+        @else if $name == "tasty" {
+            &--#{$name} {
+                .page-heading {
+                    @include gradient(90deg, #16338f, #138dfa);
                 }
             }
         }

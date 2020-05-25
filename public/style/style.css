@@ -57,13 +57,13 @@ html, body {
   max-height: 450px;
   height: 450px;
   margin: 3%;
-  font-size: 1.5em;
+  font-size: 1em;
   opacity: 1;
   transition: font-size 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 .menu:hover {
   opacity: 0.8;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .menu-logo {
   margin-bottom: 0;
@@ -137,7 +137,7 @@ html, body {
   display: flex;
   flex-flow: row wrap;
   margin: 3%;
-  padding: 3%;
+  padding: 0 5%;
   font-size: 1.5em;
   justify-content: center;
   color: black;
@@ -148,8 +148,16 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3%;
-  font-family: "Devonshire", sans-serif;
+  margin: 15% 0;
+}
+.page-heading > figure {
+  width: 70px;
+}
+.page-heading > figure > img {
+  width: 100%;
+}
+.page-heading > h2 {
+  font-size: 2em;
 }
 .page-body {
   margin-bottom: 3%;
@@ -178,6 +186,9 @@ html, body {
 .page--frenchy .page-heading, .page--frenchy .page-footer {
   font-family: "Croissant one", cursive, sans-serif;
 }
+.page--frenchy {
+  font-family: "Montserrat";
+}
 .page--frenchy .page-heading {
   background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
   background-image: -o-linear-gradient(left, #ca7411, #8865dd);
@@ -191,6 +202,14 @@ html, body {
 }
 .page--tasty .page-heading, .page--tasty .page-footer {
   font-family: "Dancing Script", cursive, sans-serif;
+}
+.page--tasty .page-heading {
+  background-image: -webkit-gradient(linear, left top, right top, from(#16338f), to(#138dfa));
+  background-image: -o-linear-gradient(left, #16338f, #138dfa);
+  background-image: linear-gradient(90deg, #16338f, #138dfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .page--palet {
   background-color: #fdfffd;
@@ -206,8 +225,11 @@ html, body {
 
 .card {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 3%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5%;
+  line-height: 15px;
 }
 .card-heading {
   display: flex;
@@ -215,22 +237,24 @@ html, body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  font-weight: bold;
+  width: 100%;
 }
 .card-heading h3 {
-  width: 50%;
   text-align: center;
   display: block;
+  font-size: 1.1em;
+  white-space: nowrap;
 }
 .card-heading h3::after {
   content: "";
   display: block;
   width: 100%;
   height: 3px;
+  margin-top: 3%;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 200ms ease;
-  background-color: black;
+  background: black;
 }
 .card-heading h3:hover::after {
   transform: scaleX(1);
@@ -246,6 +270,8 @@ html, body {
 .card-body {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-top: 3%;
 }
 .card-content {
   display: flex;
@@ -266,22 +292,33 @@ html, body {
 .card--orange {
   color: #c67412;
 }
+.card--orange h3::after {
+  background: #c67412;
+}
 .card--purple {
   color: #a56799;
 }
+.card--purple h3::after {
+  background: #a56799;
+}
 .card--blue {
   color: #6e4ccc;
+}
+.card--blue h3::after {
+  background: #6e4ccc;
 }
 
 .btn {
   background-color: #579c87;
   border-radius: 5px;
-  border: none;
-  height: 30px;
-  margin: 15px;
+  height: 50px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn > a {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #fdcb46;
 }
 
@@ -336,6 +373,17 @@ main {
   }
 }
 
+@keyframes move {
+  0% {
+    transform: translate(5px, 0px) rotate(6deg);
+  }
+  50% {
+    transform: translate(-5px, 0px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(5px, 0px) rotate(5deg);
+  }
+}
 /* FOOTER */
 footer {
   min-height: 40px;
@@ -348,9 +396,13 @@ footer {
   bottom: 0px;
   background-color: #579c87;
 }
-footer .footer-link {
-  margin: 0 10px;
-  font-size: 0.9em;
+footer > .footer-page__link {
+  margin: 0 25px;
+  font-size: 1.2em;
+}
+footer > a:hover {
+  animation: move 500ms;
+  animation-iteration-count: infinite;
 }
 @media screen and (max-width: 599px) {
   footer {
