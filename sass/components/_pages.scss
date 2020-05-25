@@ -67,6 +67,14 @@
                 }
             }
         }
+        @else if $name == "palet" {
+            &--#{$name} {
+                .page-heading {
+                    @include gradient(90deg, #47a044, #c0fc80);
+                }
+            }
+        }
+
     }
 
     @include tablet-only {

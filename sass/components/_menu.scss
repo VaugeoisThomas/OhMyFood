@@ -39,10 +39,7 @@
             box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);
         }
     }
-    @include tablet-only {
-        width: 100%;
-    }
-
+    
     &--frenchy > .menu-title {
         @include gradient(90deg, #ca7411, #8865dd)
     }
@@ -53,4 +50,7 @@
         @include gradient(90deg, #47a044, #c0fc80)
     }
     
+    @include tablet-only {
+        width: 100%;
+    }
 }

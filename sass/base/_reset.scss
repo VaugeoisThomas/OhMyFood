@@ -11,6 +11,11 @@ footer, header, menu, nav, section, figure {
 
 /* HTML5 display-role reset for older browsers */
 
+html, body {
+  font-family: 'Monserrat', sans-serif;
+  color: $secondary-color;
+}
+
 article, aside, footer, header, nav, section {
   display: block; 
 }
