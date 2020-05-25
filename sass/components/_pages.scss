@@ -80,7 +80,15 @@
         font-size: 1em;
         white-space: nowrap;
 
-    }   
+    }
+    @include mobile-only {
+        font-size: 1em;
+        white-space: normal;
+        &-heading {
+            white-space: nowrap;
+            font-size: 0.7em;
+        }
+    }
 }
 
 

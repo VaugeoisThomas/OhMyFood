@@ -72,6 +72,12 @@
                 text-align: center;
             }
         }
+        @include mobile-only {
+            &__price{
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
     &--orange {
         color: #c67412;

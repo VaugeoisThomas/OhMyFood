@@ -231,6 +231,16 @@ p {
     white-space: nowrap;
   }
 }
+@media screen and (max-width: 432px) {
+  .page {
+    font-size: 1em;
+    white-space: normal;
+  }
+  .page-heading {
+    white-space: nowrap;
+    font-size: 0.7em;
+  }
+}
 
 .card {
   display: flex;
@@ -304,6 +314,12 @@ p {
     align-items: center;
   }
   .card-content__desc {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 432px) {
+  .card-content__price {
+    width: 100%;
     text-align: center;
   }
 }
