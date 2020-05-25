@@ -227,7 +227,8 @@ p {
 }
 @media screen and (max-width: 599px) {
   .page {
-    font-size: 0.85em;
+    font-size: 1em;
+    white-space: nowrap;
   }
 }
 
@@ -296,6 +297,15 @@ p {
 }
 .card-content__price:after {
   content: "€";
+}
+@media screen and (max-width: 599px) {
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-content__desc {
+    text-align: center;
+  }
 }
 .card--orange {
   color: #c67412;
