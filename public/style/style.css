@@ -127,7 +127,7 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .menu {
     width: 100%;
   }
@@ -225,9 +225,10 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .page {
-    font-size: 0.85em;
+    font-size: 1em;
+    white-space: nowrap;
   }
 }
 
@@ -297,6 +298,15 @@ p {
 .card-content__price:after {
   content: "€";
 }
+@media screen and (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-content__desc {
+    text-align: center;
+  }
+}
 .card--orange {
   color: #c67412;
 }
@@ -329,7 +339,7 @@ p {
   font-size: 1.5em;
   color: #fdcb46;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .btn {
     width: 90%;
     margin-bottom: 5%;
@@ -380,7 +390,7 @@ main {
   padding-bottom: 3%;
   max-width: 1000px;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   main {
     margin: 0;
     max-width: 100%;
@@ -418,7 +428,7 @@ footer > a:hover {
   animation: move 500ms;
   animation-iteration-count: infinite;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
   }
