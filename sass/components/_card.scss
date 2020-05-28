@@ -37,6 +37,7 @@
         &__bar > img {
             display: flex;
             align-items: center;
+            max-width: 260px;
             width: 100%;
         }
         &__bar--reversed{

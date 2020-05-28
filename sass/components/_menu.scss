@@ -9,10 +9,31 @@
     margin: $margin-structure-page;
     font-size: $font-size-site;
     opacity: 1;
+    box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);
     transition:
         font-size 300ms ease-in-out,
         opacity 300ms ease-in-out;
     
+    @each $name, $value in $menus{
+        &--#{$name}{
+            background-color: map-get($value, bckg-c);
+            color: map-get($value, font-color);
+            @if ($name == "frenchy") {
+                font-family: map-get($value, font);
+                & > .menu-title {
+                    @include gradient(90deg, #ca7411, #8865dd);
+                }
+            }@else if ($name == "tasty") {
+                & > .menu-title {
+                    @include gradient(90deg, #16338f, #138dfa);
+                }
+            }@else if ($name == "palet") {
+                & > .menu-title {
+                    @include gradient(90deg, #47a044, #c0fc80);
+                }
+            }
+        }
+    }
     &:hover {
         opacity: 0.8;
         font-size: 1.5em;
@@ -24,32 +45,6 @@
             width: 100%;
         }
     }
-    &-title {
-        margin-bottom: 10px;
-    }
-    &-link {
-        font-family: 'Segoe Print', sans-serif;
-        font-weight: bold;
-    }
-    @each $name, $value in $menus{
-        &--#{$name}{
-            background-color: map-get($value, bckg-c);
-            color: map-get($value, font-color);
-            font-family: map-get($value, font);
-            box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);
-        }
-    }
-    
-    &--frenchy > .menu-title {
-        @include gradient(90deg, #ca7411, #8865dd)
-    }
-    &--tasty > .menu-title {
-        @include gradient(90deg, #16338f, #138dfa)
-    }
-    &--palet > .menu-title {
-        @include gradient(90deg, #47a044, #c0fc80)
-    }
-    
     @include tablet-only {
         width: 100%;
     }
