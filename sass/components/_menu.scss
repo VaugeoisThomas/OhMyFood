@@ -8,26 +8,37 @@
     height: 450px;
     margin: $margin-structure-page;
     font-size: $font-size-site;
+    cursor: pointer;
     opacity: 1;
     box-shadow: 0px 0px 5px 2px rgba(237,237,237,1);
     transition:
         font-size 300ms ease-in-out,
         opacity 300ms ease-in-out;
-    
+
     @each $name, $value in $menus{
         &--#{$name}{
             background-color: map-get($value, bckg-c);
             color: map-get($value, font-color);
-            @if ($name == "frenchy") {
+
+            @if ($name == "enchanted") {
+                & > .menu-title {
+                    font-family: map-get($value, font);
+                }
+                & > .menu_link {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+            }@else if ($name == "frenchy") {
                 font-family: map-get($value, font);
                 & > .menu-title {
                     @include gradient(90deg, #ca7411, #8865dd);
                 }
             }@else if ($name == "tasty") {
+                font-family: map-get($value, font);
                 & > .menu-title {
                     @include gradient(90deg, #16338f, #138dfa);
                 }
             }@else if ($name == "palet") {
+                font-family: map-get($value, font);
                 & > .menu-title {
                     @include gradient(90deg, #47a044, #c0fc80);
                 }
@@ -35,7 +46,7 @@
         }
     }
     &:hover {
-        opacity: 0.8;
+        opacity: 0.5;
         font-size: 1.5em;
     }
     &-logo {

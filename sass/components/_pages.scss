@@ -40,6 +40,8 @@
         flex-direction: row;
         justify-content: center;
         font-family: $enchanted-font-family;
+        margin-bottom: 10%;
+        font-size: 1em;
 
         figure {
             width: 25px;
@@ -47,10 +49,6 @@
 
         figure > img {
             width: 100%;
-        }
-
-        @include mobile-only {
-            margin-bottom: 10%;
         }
     }
 

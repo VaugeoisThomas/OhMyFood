@@ -18,6 +18,7 @@
             display: block;
             font-size: 1.1em;
             white-space: nowrap;
+            cursor: pointer;
         }
         & h3::after {
             content: "";

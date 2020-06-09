@@ -58,6 +58,7 @@ p {
   height: 450px;
   margin: 3%;
   font-size: 1em;
+  cursor: pointer;
   opacity: 1;
   box-shadow: 0px 0px 5px 2px #ededed;
   transition: font-size 300ms ease-in-out, opacity 300ms ease-in-out;
@@ -65,6 +66,12 @@ p {
 .menu--enchanted {
   background-color: #fcdfdb;
   color: #3c1319;
+}
+.menu--enchanted > .menu-title {
+  font-family: "Devonshire", sans-serif;
+}
+.menu--enchanted > .menu_link {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu--frenchy {
   background-color: #fff5fe;
@@ -82,6 +89,7 @@ p {
 .menu--tasty {
   background-color: #f9f9f9;
   color: #0f86ee;
+  font-family: "Dancing Script", cursive, sans-serif;
 }
 .menu--tasty > .menu-title {
   background-image: -webkit-gradient(linear, left top, right top, from(#16338f), to(#138dfa));
@@ -94,6 +102,7 @@ p {
 .menu--palet {
   background-color: #fdfffd;
   color: #71c259;
+  font-family: "Kaushan Script", cursive, sans-serif;
 }
 .menu--palet > .menu-title {
   background-image: -webkit-gradient(linear, left top, right top, from(#47a044), to(#c0fc80));
@@ -104,7 +113,7 @@ p {
   -webkit-text-fill-color: transparent;
 }
 .menu:hover {
-  opacity: 0.8;
+  opacity: 0.5;
   font-size: 1.5em;
 }
 .menu-logo {
@@ -159,17 +168,14 @@ p {
   flex-direction: row;
   justify-content: center;
   font-family: "Devonshire", sans-serif;
+  margin-bottom: 10%;
+  font-size: 1em;
 }
 .page-footer figure {
   width: 25px;
 }
 .page-footer figure > img {
   width: 100%;
-}
-@media screen and (max-width: 432px) {
-  .page-footer {
-    margin-bottom: 10%;
-  }
 }
 .page--enchanted {
   background-color: #fcdfdb;
@@ -260,6 +266,7 @@ p {
   display: block;
   font-size: 1.1em;
   white-space: nowrap;
+  cursor: pointer;
 }
 .card-heading h3::after {
   content: "";
