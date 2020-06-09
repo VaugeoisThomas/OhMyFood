@@ -55,11 +55,12 @@
         flex-direction: row;
         margin-bottom: 2%;
         margin-top: 2%;
+        font-size: 0.75em;
 
-        &__desc{
+        &__desc {
             width: 89%;
         }
-        &__price{
+        &__price {
             width: 11%;
             font-weight: bold;
         }

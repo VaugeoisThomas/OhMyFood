@@ -295,6 +295,7 @@ p {
   flex-direction: row;
   margin-bottom: 2%;
   margin-top: 2%;
+  font-size: 0.75em;
 }
 .card-content__desc {
   width: 89%;
