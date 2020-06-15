@@ -42,13 +42,18 @@
         font-family: $enchanted-font-family;
         margin-bottom: 10%;
         font-size: 1em;
+        width: 100%;
 
-        figure {
+        & > figure {
             width: 25px;
         }
 
-        figure > img {
+        & > figure > img {
             width: 100%;
+        }
+        & > p {
+            font-size: 1em;
+            margin-left: 2%;
         }
     }
 

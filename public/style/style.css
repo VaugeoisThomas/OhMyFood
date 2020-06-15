@@ -177,12 +177,17 @@ p {
   font-family: "Devonshire", sans-serif;
   margin-bottom: 10%;
   font-size: 1em;
+  width: 100%;
 }
-.page-footer figure {
+.page-footer > figure {
   width: 25px;
 }
-.page-footer figure > img {
+.page-footer > figure > img {
   width: 100%;
+}
+.page-footer > p {
+  font-size: 1em;
+  margin-left: 2%;
 }
 .page--enchanted {
   background-color: #fcdfdb;
@@ -303,6 +308,10 @@ p {
   flex-direction: column;
   width: 100%;
   margin-top: 3%;
+  padding: 0 5%;
+}
+.card-body--enchanted {
+  padding: 0;
 }
 .card-content {
   display: flex;
