@@ -19,18 +19,21 @@
         &--#{$name}{
             background-color: map-get($value, bckg-c);
             color: map-get($value, font-color);
+            & > .menu-link {
+                font-family: 'Kalam', cursive;
+            }
 
             @if ($name == "enchanted") {
                 & > .menu-title {
                     font-family: map-get($value, font);
                 }
-                & > .menu_link {
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }
             }@else if ($name == "frenchy") {
                 font-family: map-get($value, font);
                 & > .menu-title {
                     @include gradient(90deg, #ca7411, #8865dd);
+                }
+                & > .menu-link {
+                    font-family: map-get($value, font)
                 }
             }@else if ($name == "tasty") {
                 font-family: map-get($value, font);

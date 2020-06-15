@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* RESET PROPERTIES */
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Montserrat&family=Kalam&display=swap");
 html, body, div, span, h1, h2, h3, h4, p, a, img, article, footer, header, menu, section, figure {
   margin: 0;
   padding: 0;
@@ -62,16 +62,19 @@ p {
   background-color: #fcdfdb;
   color: #3c1319;
 }
+.menu--enchanted > .menu-link {
+  font-family: "Kalam", cursive;
+}
 .menu--enchanted > .menu-title {
   font-family: "Devonshire", sans-serif;
-}
-.menu--enchanted > .menu_link {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu--frenchy {
   background-color: #fff5fe;
   color: #ca7411;
   font-family: "Croissant one", cursive, sans-serif;
+}
+.menu--frenchy > .menu-link {
+  font-family: "Kalam", cursive;
 }
 .menu--frenchy > .menu-title {
   background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
@@ -81,10 +84,16 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu--frenchy > .menu-link {
+  font-family: "Croissant one", cursive, sans-serif;
+}
 .menu--tasty {
   background-color: #f9f9f9;
   color: #0f86ee;
   font-family: "Dancing Script", cursive, sans-serif;
+}
+.menu--tasty > .menu-link {
+  font-family: "Kalam", cursive;
 }
 .menu--tasty > .menu-title {
   background-image: -webkit-gradient(linear, left top, right top, from(#16338f), to(#138dfa));
@@ -98,6 +107,9 @@ p {
   background-color: #fdfffd;
   color: #71c259;
   font-family: "Kaushan Script", cursive, sans-serif;
+}
+.menu--palet > .menu-link {
+  font-family: "Kalam", cursive;
 }
 .menu--palet > .menu-title {
   background-image: -webkit-gradient(linear, left top, right top, from(#47a044), to(#c0fc80));
