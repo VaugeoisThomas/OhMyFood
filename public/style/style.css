@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* RESET PROPERTIES */
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Montserrat&family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Montserrat&family=Kalam&family=Merriweather:wght@300&display=swap");
 html, body, div, span, h1, h2, h3, h4, p, a, img, article, footer, header, menu, section, figure {
   margin: 0;
   padding: 0;
@@ -206,9 +206,9 @@ p {
   font-family: "Croissant one", cursive, sans-serif;
 }
 .page--frenchy {
-  font-family: "Montserrat";
+  font-family: "Merriweather";
 }
-.page--frenchy > .page-heading {
+.page--frenchy > .page-heading > .gradient {
   background-image: -webkit-gradient(linear, left top, right top, from(#ca7411), to(#8865dd));
   background-image: -o-linear-gradient(left, #ca7411, #8865dd);
   background-image: linear-gradient(90deg, #ca7411, #8865dd);
@@ -222,7 +222,7 @@ p {
 .page--tasty .page-heading, .page--tasty .page-footer {
   font-family: "Dancing Script", cursive, sans-serif;
 }
-.page--tasty > .page-heading {
+.page--tasty > .page-heading > .gradient {
   background-image: -webkit-gradient(linear, left top, right top, from(#16338f), to(#138dfa));
   background-image: -o-linear-gradient(left, #16338f, #138dfa);
   background-image: linear-gradient(90deg, #16338f, #138dfa);
@@ -236,7 +236,7 @@ p {
 .page--palet .page-heading, .page--palet .page-footer {
   font-family: "Kaushan Script", cursive, sans-serif;
 }
-.page--palet > .page-heading {
+.page--palet > .page-heading > .gradient {
   background-image: -webkit-gradient(linear, left top, right top, from(#47a044), to(#c0fc80));
   background-image: -o-linear-gradient(left, #47a044, #c0fc80);
   background-image: linear-gradient(90deg, #47a044, #c0fc80);

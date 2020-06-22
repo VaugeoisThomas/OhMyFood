@@ -66,22 +66,22 @@
         }
         @if $name == "frenchy" {
             &--#{$name} {
-                font-family: "Montserrat";
-                & > .gradient {
+                font-family: "Merriweather";
+                & > .page-heading > .gradient {
                     @include gradient(90deg, #ca7411, #8865dd);
                 }
             }
         }        
         @else if $name == "tasty" {
             &--#{$name} {
-                & > .gradient {
+                & > .page-heading > .gradient {
                     @include gradient(90deg, #16338f, #138dfa);
                 }
             }
         }
         @else if $name == "palet" {
             &--#{$name} {
-                & > .gradient {
+                & > .page-heading > .gradient {
                     @include gradient(90deg, #47a044, #c0fc80);
                 }
             }
